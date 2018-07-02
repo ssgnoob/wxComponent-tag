@@ -1,6 +1,4 @@
 
-const SUPPORT_TYPE = ['loading', 'success', 'fail'];
-
 Component({
   data: {
     tipPos:{},
@@ -20,20 +18,17 @@ Component({
       wx.createSelectorQuery().in(this).select(".container").fields({
       size: true
       },function(res){
-        console.log(res)
+      
         const newX=self.data.tipPos.x-res.width/2
+        const newY=self.data.tipPos.y-res.height+10
         self.setData({
-          tipPos:{x:newX,y:self.data.tipPos.y},
+          tipPos:{x:newX,y:newY},
           opacity:1
         })
       }).exec()
      
     },
-    clearZanTip(){
-      this.setData({
-        show:false
-      })
-    },
+    
     clear() {
       this.setData({
         show:false,
