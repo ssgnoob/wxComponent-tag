@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  left:63px;
+  top:211px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+  box-sizing: border-box;
+  
+}
+
+.main{
+  color:white;
+min-width:80rpx;
+text-align:center;
+border-radius:16rpx;
+padding:10rpx;
+
+  background: rgba(0,0,0,0.7);
+}
+.arg{
+  width:0;
+height:0;
+border-top:20rpx solid black;
+border-left:20rpx solid transparent;
+display:inline-block;
+border-bottom:20rpx solid transparent;
+border-right:20rpx solid transparent;
+
+}

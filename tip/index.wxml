@@ -1,0 +1,4 @@
+<view class="container" hidden="{{!show}}" style="left:{{tipPos.x+'px'}};top:{{tipPos.y+'px'}};opacity:{{opacity}}" bindtap="clear">
+  <view class="main">{{tipText}}</view>
+  <view class="arg"></view>  
+</view>
